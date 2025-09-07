@@ -1,0 +1,53 @@
+Of course. Here is the comprehensive creative brief based on the video provided.
+
+***
+
+Ad 1: "Freelancer Hack for International Payments"
+
+**Full Script:**
+**Creator:** I am a freelancer and a lot of my clients are based internationally, in the US and Europe. So I get paid in US Dollars and Euros. And if you're like me, you probably know the pain of receiving money in a different currency. The fees are just crazy, and the exchange rates are just horrible.
+
+[On-screen text: Receiving USD from a US Client]
+[Visual: Traditional bank logo appears with a red X over it]
+
+**Creator:** But I found a way to get paid like a local.
+
+[Visual: Wise logo appears with a green checkmark]
+
+**Creator:** Let me show you how it works. With Wise, you can get your own international account details. For example, a US bank account with a routing number. You can just share these details with your client, and they can pay you like they would pay a local.
+
+[Creator holds up phone showing the Wise app interface, specifically the USD account details page with a routing number visible.]
+
+**Creator:** And when you have the money in your Wise account, you can either spend it with your Wise card or you can convert it to your local currency. And when you do that, you always get the mid-market exchange rate.
+
+[On-screen text overlay on the phone screen: Mid-market exchange rate]
+[On-screen text overlay on the phone screen: No hidden fees]
+[On-screen text overlay on the phone screen: Hold 40+ currencies]
+
+**Creator:** So download Wise and get your international account details.
+
+**Video Concept Breakdown:**
+*   **Video Title:** "Freelancer Hack for International Payments"
+*   **Concept Type:** UGC Problem/Solution & Hack/Tip Style
+*   **Brief Format:** Guidance
+*   **Use Case:** Receiving international payments for freelancers/small business owners.
+*   **Target Audience:** Freelancers, consultants, content creators, and small business owners who work with international clients. They are likely tech-savvy, value transparency, and are actively looking for ways to optimize their income by reducing unnecessary business costs like bank fees.
+*   **Visual Elements:**
+    *   **Setting:** A clean, well-lit, and relatable indoor space, likely a home office or living room. The background is slightly blurred, keeping the focus on the creator.
+    *   **Creator:** A single creator speaking directly to the camera in a friendly, conversational, and authentic manner.
+    *   **Camera Work:** Primarily a static medium-close-up shot (selfie-style). There is a subtle, quick zoom-in to emphasize the "pain" of bank fees. The shot then shifts to a close-up of the creator's phone to demo the app.
+    *   **Props:** A smartphone is used as the key prop to demonstrate the Wise app interface, adding a practical "how-to" element.
+    *   **Transitions:** Simple, clean jump cuts are used to maintain a dynamic pace. The key transition is from the creator speaking to the camera to the close-up/screen recording of the app demo.
+    *   **Text Overlays:** Simple, bold, white text is used to highlight key information. Icons (red X, green checkmark) are used to create a clear visual contrast between the problem (banks) and the solution (Wise). Text is also overlaid on the app demo to reinforce USPs.
+*   **Concept:** The video follows a classic problem-solution-demonstration structure, presented as a helpful tip from one freelancer to another. It starts by establishing a highly relatable pain point for the target audience: losing money to fees and bad exchange rates when getting paid by international clients. The creator quickly introduces Wise as the "hack" or solution. The core of the video is the demonstration, where the creator shows the Wise app on their phone. This visual proof is crucial—it moves the concept from a simple claim to a credible, actionable solution. By showing the US account details and reinforcing benefits with text overlays during the demo, the video builds trust and clearly communicates the product's value. The friendly, peer-to-peer tone makes the recommendation feel authentic and trustworthy.
+*   **Hook Ideas:**
+    *   "If you're a freelancer with international clients, you need to see this."
+    *   "Stop letting banks take a cut of your international payments."
+    *   "Here's how I get paid by my US clients with zero crazy fees."
+*   **Pain Point:** Freelancers and small businesses lose a significant portion of their international earnings to high bank fees and unfair exchange rates.
+*   **Key USPs:**
+    *   **Local Account Details:** Get your own international bank details (e.g., a US routing number) to receive payments like a local, avoiding costly international wire (SWIFT) fees.
+    *   **Mid-Market Exchange Rate:** Always get the real, mid-market exchange rate when you convert money, with no hidden markups like traditional banks charge.
+    *   **Low, Transparent Fees:** The fee structure is clear and significantly lower than traditional banking alternatives.
+    *   **Multi-Currency Account:** Hold and manage money in over 40 different currencies all within a single account.
+*   **CTA:** "So download Wise and get your international account details."

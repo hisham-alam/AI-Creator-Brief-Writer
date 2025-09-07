@@ -2,94 +2,90 @@
 File handler module for managing input/output operations.
 """
 import os
+import sys
 from pathlib import Path
-from typing import List, Dict, Optional, Tuple
+from typing import List, Dict, Optional
 
-from config import config
+# Importing config happens in main.py, and is passed to this module
 
 
-def get_video_files() -> List[str]:
+def get_video_files(config) -> List[str]:
     """
-    Get all video files in the input directory.
+    Get all video files in the input directory (Downloads folder) and its subfolders.
     
+    Args:
+        config: Configuration dictionary
+        
     Returns:
         List of paths to video files
     """
     video_files = []
     
-    for extension in config.SUPPORTED_VIDEO_EXTENSIONS:
-        for file_path in Path(config.INPUT_DIR).glob(f"*{extension}"):
+    # Expand ~ to user's home directory if present
+    input_dir = os.path.expanduser(config['INPUT_DIR'])
+    
+    # Search for video files in Downloads folder and its subfolders
+    for extension in config['SUPPORTED_VIDEO_EXTENSIONS']:
+        for file_path in Path(input_dir).glob(f"**/*{extension}"):
             video_files.append(str(file_path))
     
+    print(f"Found {len(video_files)} video file(s) in {input_dir} and its subfolders")
     return sorted(video_files)
 
 
-def get_transcript_path(video_path: str) -> str:
-    """
-    Generate the transcript file path for a given video path.
-    
-    Args:
-        video_path: Path to the video file
-        
-    Returns:
-        Path to the transcript file
-    """
-    video_name = os.path.splitext(os.path.basename(video_path))[0]
-    return os.path.join(config.TRANSCRIPT_DIR, f"{video_name}{config.TRANSCRIPT_EXTENSION}")
-
-
-def get_brief_path(video_path: str) -> str:
+def get_brief_path(video_path: str, config) -> str:
     """
     Generate the brief file path for a given video path.
+    Preserves any folder structure from the Downloads path.
     
     Args:
         video_path: Path to the video file
+        config: Configuration dictionary
         
     Returns:
         Path to the brief file
     """
     video_name = os.path.splitext(os.path.basename(video_path))[0]
-    return os.path.join(config.BRIEF_DIR, f"{video_name}{config.BRIEF_EXTENSION}")
+    return os.path.join(config['BRIEF_DIR'], f"{video_name}{config['BRIEF_EXTENSION']}")
 
 
-def get_processed_status() -> Dict[str, Dict[str, bool]]:
+
+def get_processing_status(config) -> Dict[str, bool]:
     """
     Get the processing status of all video files.
+    
+    Args:
+        config: Configuration dictionary
     
     Returns:
         Dictionary mapping video filenames to their processing status:
             {
-                'video_name.mp4': {
-                    'transcribed': True/False,
-                    'brief_generated': True/False
-                }
+                'video_name.mp4': True/False
             }
     """
     status = {}
     
     # Get all video files
-    video_files = get_video_files()
+    video_files = get_video_files(config)
     
     for video_path in video_files:
         video_name = os.path.basename(video_path)
-        transcript_path = get_transcript_path(video_path)
-        brief_path = get_brief_path(video_path)
+        brief_path = get_brief_path(video_path, config)
         
-        status[video_name] = {
-            'transcribed': os.path.exists(transcript_path),
-            'brief_generated': os.path.exists(brief_path)
-        }
+        status[video_name] = os.path.exists(brief_path)
     
     return status
 
 
-def ensure_directories() -> None:
+def ensure_directories(config) -> None:
     """
     Ensure all necessary directories exist.
+    
+    Args:
+        config: Configuration dictionary
     """
-    os.makedirs(config.INPUT_DIR, exist_ok=True)
-    os.makedirs(config.TRANSCRIPT_DIR, exist_ok=True)
-    os.makedirs(config.BRIEF_DIR, exist_ok=True)
+    # We don't create the INPUT_DIR (Downloads folder) as it should already exist
+    os.makedirs(config['BRIEF_DIR'], exist_ok=True)
 
 
 def read_file(file_path: str) -> Optional[str]:

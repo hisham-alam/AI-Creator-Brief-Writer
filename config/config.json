@@ -1,0 +1,18 @@
+{
+    "LLM_CONFIG": {
+        "DEFAULT_LLM_MODEL": "gemini-2.5-pro",
+        "LLM_TEAM": "marketing",
+        "LLM_USE_CASE": "creative-briefs",
+        "FALLBACK_MODELS": [
+            "anthropic.claude-3-sonnet-20240229-v1:0"
+        ]
+    },
+    "FILE_EXTENSIONS": {
+        "SUPPORTED_VIDEO_EXTENSIONS": [".mp4", ".avi", ".mov", ".mkv", ".webm"],
+        "BRIEF_EXTENSION": ".txt"
+    },
+    "PATHS": {
+        "INPUT_DIR": "~/Downloads",
+        "BRIEF_DIR": "archive"
+    }
+}
